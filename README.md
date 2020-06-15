@@ -49,11 +49,7 @@ You can add a new txt file to the resource folder and update the main class.
 You just have to change the getFileReader method parameter to the txt file name and and run the main class or mvn command.
 
 ```
-WordsFrequency.printCalculateWordsFrequency(
-        FileReaderFactory
-                .getFileReader("NEW_FILE_NAME.txt")
-                .getFileContext()
-);
+WordsFrequency.printCalculateWordsFrequency("NEW_FILE_NAME.txt");
 ```
 
 cheers and have fun. 

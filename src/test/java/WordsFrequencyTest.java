@@ -29,4 +29,17 @@ public class WordsFrequencyTest {
         Assert.assertEquals(expected, result);
     }
 
+    @Test
+    public void areHashMapStringExpected() {
+        Map<String, Long> hashMap = new HashMap();
+        hashMap.put("a", 2L);
+        hashMap.put("midnight", 1L);
+        hashMap.put("dreary", 1L);
+
+        String expected = "a 2\nmidnight 1\ndreary 1";
+
+        String result = WordsFrequency.mapToString(hashMap);
+        Assert.assertEquals(expected, result);
+    }
+
 }
